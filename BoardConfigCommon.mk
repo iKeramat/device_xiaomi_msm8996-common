@@ -175,7 +175,7 @@ VENDOR_SECURITY_PATCH := 2018-10-01
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
-BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+PRODUCT_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit.xiaomi_8996
