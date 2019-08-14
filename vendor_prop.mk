@@ -155,6 +155,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1
 
+# Ringtone
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.ringtone=Mi.ogg
+
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.rmnet.data.enable=true \
