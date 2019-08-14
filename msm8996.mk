@@ -271,6 +271,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
+# Mi Ringtone
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/extra/ringtone/Mi.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Mi.ogg
+	
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
