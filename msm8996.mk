@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2019 The LineageOS Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -145,7 +145,9 @@ PRODUCT_PACKAGES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.bt.sh \
     init.class_main.sh \
+    init.device.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
@@ -153,9 +155,9 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    init.device.rc \
-    ueventd.qcom.rc \
-    init.bt.sh
+    init.recovery.qcom.rc \
+    ueventd.qcom.rc
+
 
 # Display
 PRODUCT_PACKAGES += \
