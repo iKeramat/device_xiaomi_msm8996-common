@@ -22,12 +22,11 @@
 #include <mutex>
 
 #include <android-base/file.h>
-#include <android-base/logging.h>
 #include <android-base/properties.h>
 #include <android-base/stringprintf.h>
 #include <android-base/strings.h>
 
-#include <utils/Log.h>
+#include <log/log.h>
 #include <utils/Trace.h>
 
 #include "AudioStreaming.h"
@@ -68,7 +67,7 @@ Power::Power()
         android::base::WaitForProperty(kPowerHalInitProp, "1");
         mHintManager = HintManager::GetFromJSON(kPowerHalConfigPath);
         if (!mHintManager) {
-            LOG(FATAL) << "Invalid config: " << kPowerHalConfigPath;
+            ALOGE("Invalid config: %s", kPowerHalConfigPath);
         }
         mInteractionHandler = std::make_unique<InteractionHandler>(mHintManager);
         mInteractionHandler->Init();
@@ -168,14 +167,14 @@ Return<void> Power::setFeature(Feature /*feature*/, bool /*activate*/) {
 }
 
 Return<void> Power::getPlatformLowPowerStats(getPlatformLowPowerStats_cb _hidl_cb) {
-    LOG(ERROR) << "getPlatformLowPowerStats not supported. Use IPowerStats HAL.";
+    ALOGE("getPlatformLowPowerStats not supported. Use IPowerStats HAL.");
     _hidl_cb({}, Status::SUCCESS);
     return Void();
 }
 
 // Methods from ::android::hardware::power::V1_1::IPower follow.
 Return<void> Power::getSubsystemLowPowerStats(getSubsystemLowPowerStats_cb _hidl_cb) {
-    LOG(ERROR) << "getSubsystemLowPowerStats not supported. Use IPowerStats HAL.";
+    ALOGE("getSubsystemLowPowerStats not supported. Use IPowerStats HAL.");
     _hidl_cb({}, Status::SUCCESS);
     return Void();
 }
@@ -325,7 +324,7 @@ Return<void> Power::debug(const hidl_handle &handle, const hidl_vec<hidl_string>
         // Dump nodes through libperfmgr
         mHintManager->DumpToFd(fd);
         if (!android::base::WriteStringToFd(buf, fd)) {
-            PLOG(ERROR) << "Failed to dump state to fd";
+            ALOGE("Failed to dump state to fd");
         }
         fsync(fd);
     }
