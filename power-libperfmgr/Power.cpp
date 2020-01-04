@@ -21,6 +21,8 @@
 
 #include <mutex>
 
+#define TAP_TO_WAKE_NODE "/proc/touchpanel/double_tap_enable"
+
 #include <android-base/file.h>
 #include <android-base/properties.h>
 #include <android-base/stringprintf.h>
@@ -161,8 +163,14 @@ Return<void> Power::powerHint(PowerHint_1_0 hint, int32_t data) {
     return Void();
 }
 
-Return<void> Power::setFeature(Feature /*feature*/, bool /*activate*/) {
-    // Nothing to do
+Return<void> Power::setFeature(Feature feature, bool activate) {
+    switch (feature) {
+        case Feature::POWER_FEATURE_DOUBLE_TAP_TO_WAKE:
+            ::android::base::WriteStringToFile(activate ? "1" : "0", TAP_TO_WAKE_NODE, true);
+            break;
+        default:
+            break;
+    }
     return Void();
 }
 
