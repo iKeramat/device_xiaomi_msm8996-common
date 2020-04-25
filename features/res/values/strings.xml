@@ -82,6 +82,10 @@
     <string name="fingerprint_as_button_title">Fingerprint as button</string>
     <string name="fingerprint_as_button_summary">Use fingerprint reader as a customizable button</string>
 
+    <!-- FPS Info -->
+    <string name="fps_info_title">FPS Info Overlay</string>
+    <string name="fps_info_summary">Show overlay with current frames per second</string>
+
     <!-- Gestures -->
     <string name="gestures_title">Gestures</string>
 

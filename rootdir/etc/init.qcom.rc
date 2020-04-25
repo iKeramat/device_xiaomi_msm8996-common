@@ -230,6 +230,10 @@ on boot
     chown system system /sys/devices/soc/soc:fpc_fpc1020/enable_wakeup
     chown system system /sys/devices/soc/soc:fpc_fpc1020/proximity_state
 
+    # Access permission for FPS Node
+    chown system graphics /sys/class/graphics/fb0/measured_fps
+    chmod 0666 /sys/class/graphics/fb0/measured_fps
+
     # Access permission for KCAL
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
