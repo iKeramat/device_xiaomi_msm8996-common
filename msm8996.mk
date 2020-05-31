@@ -146,7 +146,8 @@ PRODUCT_PACKAGES += \
 
 # Common config scripts
 PRODUCT_PACKAGES += \
-    init.panel.sh
+    init.panel.sh \
+    init.spectrum.sh
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -155,7 +156,8 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.power.rc \
     init.qcom.usb.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.spectrum.rc
 
 # Display
 PRODUCT_PACKAGES += \
@@ -256,6 +258,9 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_8996
+
+# Lineage Hardware
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
