@@ -141,6 +141,9 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(VENDOR_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
 
+# Keydisabler
+JAVA_SOURCE_OVERLAYS := org.custom.hardware|$(VENDOR_PATH)/keydisabler|**/*.java
+
 # VNDK
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
