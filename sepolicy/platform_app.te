@@ -1,0 +1,3 @@
+# LockScreen Charging
+allow platform_app sysfs_batteryinfo:dir search;
+allow platform_app sysfs_batteryinfo:file { getattr open read }; 
