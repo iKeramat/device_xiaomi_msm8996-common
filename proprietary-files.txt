@@ -1,3 +1,5 @@
+# Default: natrium - OPR1.170623.032 V11.0.2.0.OBGCNXM
+
 # ADSP - from Oneplus 3T PKQ1.181203.001
 vendor/bin/adsprpcd
 vendor/lib/libadsp_default_listener.so
