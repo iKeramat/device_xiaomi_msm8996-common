@@ -1,49 +1,51 @@
 # Default: natrium - OPR1.170623.032 V11.0.2.0.OBGCNXM
 
-# ADSP - from Oneplus 3T PKQ1.181203.001
-vendor/bin/adsprpcd
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsp_hvx_callback_skel.so
-vendor/lib/libadsp_hvx_stub.so
-vendor/lib/libadsprpc.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libsdsprpc.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libsdsprpc.so
+# ADSP - from LA.UM.7.5.r1-05300-8x96.0
+vendor/bin/adsprpcd|ef200e3bce4429fd9461c74330a003f069ffd5b3
+vendor/lib64/libadsp_default_listener.so|bddcdb6aa9efa39f12fc830fc54d42d8e45409dd
+vendor/lib64/libadsprpc.so|a64db8a056f364586011b08bb5e8060ba2ce6929
+vendor/lib64/libcdsprpc.so|bff6e3217f469011f330c3563bfe4e11dea164ca
+vendor/lib64/libfastcvadsp_stub.so|e25929713605e70417dee54b362b98d04a860f47
+vendor/lib64/libfastcvopt.so|1b6cda561541013dfb9379cb96f675d634d93137
+vendor/lib64/libsdsprpc.so|44cbded578f25eab4ae6a34f48c3f410c500ca05
+vendor/lib/libadsp_default_listener.so|58d05c4794c6ceb7b59e332c909a79ab528a4f31
+vendor/lib/libadsp_hvx_callback_skel.so|b7e47d8d0c011caea30daf974de81eb01bb90268
+vendor/lib/libadsp_hvx_stub.so|5842e47b5929e15c8b63f1aa4795ca3432debebb
+vendor/lib/libadsprpc.so|df8d5f2aca5f63e6a507111e7bd4933fadb025cd
+vendor/lib/libcdsprpc.so|5af5859dee7d34df2ec183b2cdee20f8cc5d2d87
+vendor/lib/libfastcvadsp_stub.so|6b50fd7d53811b51e06fedd87c12a794d0c2f645
+vendor/lib/libfastcvopt.so|797b9843ccc1f650d66831d645db2bc96b89c299
+vendor/lib/libsdsprpc.so|557a7296dd3ab9a8c3f655b85ca2603d0dd70297
 
-# ADSP modules - from Oneplus 3T PKQ1.181203.001
-vendor/lib/rfsa/adsp/libadsp_fd_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_stats.so
-vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so
-vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so
-vendor/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/rfsa/adsp/libvpp_frc.so
-vendor/lib/rfsa/adsp/libvpp_svc_skel.so
+# ADSP modules - from LA.UM.7.5.r1-05300-8x96.0
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so|5607a78451b621bb6399878ab58ba896c72797ab
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|035272c1d77bcd04e3a838056d512964744c9322
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|6a1d6ee55cc65d0f12f6a9bfd04823b46d2d6a24
+vendor/lib/rfsa/adsp/libadsp_hvx_stats.so|2f6abffe644ed918ff1a7e0e330f8e9c32add72c
+vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so|3f82d78a7c9e88c5fdc02dc0761349e4ab95abf8
+vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so|b21151ad414cd7310117fceb924a72fd20e97257
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
+vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
+vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af96834147e41e
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
+vendor/lib/rfsa/adsp/libvpp_frc.so|263c75014b0e75c6f0d20e61fe271e6511fa24a4
+vendor/lib/rfsa/adsp/libvpp_svc_skel.so|535edf13dda82e200d8cfe6d704dfbcbd3d782f7
+
+# ADSP modules
+vendor/lib/rfsa/adsp/libexternal_dog_skel.so
+vendor/lib/rfsa/adsp/us-syncproximity.so
 
 # Audio libraries - from LA.UM.7.5.r1-05300-8x96.0
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so|be45395be21d69e9810827cdec2c6d7c383ce143
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
-vendor/lib/libqtigef.so
+vendor/lib/libacdb-fts.so|4f86d94582dd5134dbcf7b23e3963a5f3e0a680a
+vendor/lib/libacdbloader.so|b81b446a1f7309993846822199a4b9b0e307e0db
+vendor/lib/libacdbrtac.so|4ca5d96caf61eb2b4967d1dd3dfde78a19bfbf21
+vendor/lib/libadiertac.so|f8776c34269c49f87840a3ec5ef6141a11b016b8
+vendor/lib/libadm.so|bd574dd1f10937386df3626e2ed9d4de7d5d8ba3
+vendor/lib/libaudcal.so|b6b55c953af4af971dfe47d94f0da2ac6041b9c1
+vendor/lib/libqtigef.so|784fcf30bcb94db37c67ea5c8cbc93c8c4a19c2c
 
 # Bluetooth - from LA.UM.8.6.r1-04400-89xx.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -273,31 +275,29 @@ vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
 # DRM and SEE - from LA.UM.7.5.r1-05300-8x96.0
-vendor/bin/qseecomd
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libqisl.so
-vendor/lib64/librpmb.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libssd.so
-vendor/lib/libQSEEComAPI.so
+vendor/bin/qseecomd|191536bdf3d72238ea7b3ca54b4289b7a09b4bcd
+vendor/lib64/libGPreqcancel.so|6f59015f1e340dd1c995f0008a5f282037d98867
+vendor/lib64/libGPreqcancel_svc.so|84783ffc4dc45a6934a2c87166842fd1d6c73ebe
+vendor/lib64/libQSEEComAPI.so|050e9cac4b5bd3c2fd2babc4c567987d7c6ce46b
+vendor/lib64/libSecureUILib.so|9462ad202be6df615d008e3c72b2592dc8e20e41
+vendor/lib64/libStDrvInt.so|768602d8b0c04ff8d09ebcf010c19ccb589dc4a7
+vendor/lib64/libdrmfs.so|e72d79579f78501486fbd0883ee620fcb0b726ca
+vendor/lib64/libdrmtime.so|7eaed4940c68505b312d26b26585bfc93bbd8d54
+vendor/lib64/libqisl.so|1f1523c03daffa9e1cd45d96d212d2fa8c1b5790
+vendor/lib64/librpmb.so|9f88e88cd8155b69a085548a60a15c5b5be70f48
+vendor/lib64/libsecureui.so|4e496259eb6da9b3dcf6fb744da897422350b6c7
+vendor/lib64/libsecureui_svcsock.so|dbd7400a449a10573a2d8d3aafc0214a64aa1cd7
+vendor/lib64/libssd.so|a3b4f5c81b96966f8d2a1a2f8518522f223e73fb
+vendor/lib/libQSEEComAPI.so|cfc57d8022dbac5b20249e5ce7137b0834a208a0
 
 # DRM Widevine - from LA.UM.8.6.r1-03400-89xx.0
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib64/libwvhidl.so
 
-
-
 # Gatekeeper - from LA.UM.7.5.r1-05300-8x96.0
-vendor/lib64/hw/gatekeeper.msm8996.so
-vendor/lib/hw/gatekeeper.msm8996.so
+vendor/lib64/hw/gatekeeper.msm8996.so|d324fd57026ac20409c474cfc4e15595aa9d4738
+vendor/lib/hw/gatekeeper.msm8996.so|a1e3756cb6e42f869ae1997028eaa9159478525b
 
 # GPS - from LA.UM.8.6.r1-04400-89xx.0
 etc/permissions/com.qti.location.sdk.xml
@@ -461,14 +461,14 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so
 
 # Keystore - from LA.UM.7.5.r1-05300-8x96.0
-vendor/lib64/hw/keystore.msm8996.so
-vendor/lib/hw/keystore.msm8996.so
+vendor/lib64/hw/keystore.msm8996.so|58195df09c1bc95c3e54d5594c13c83fdf54ad47
+vendor/lib/hw/keystore.msm8996.so|a8de2add9c6e90765a83e15dcdb9abacb015fb3d
 
 # Listen - from LA.UM.7.5.r1-05300-8x96.0
-vendor/lib64/hw/sound_trigger.primary.msm8996.so
-vendor/lib/hw/sound_trigger.primary.msm8996.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libsmwrapper.so
+vendor/lib64/hw/sound_trigger.primary.msm8996.so|b38353410e33fe4fdb5936ce140442f1b1056231
+vendor/lib/hw/sound_trigger.primary.msm8996.so|52ba9836ceb42b5bdf35785f40701391dfaa7051
+vendor/lib/libadpcmdec.so|eeaef8dd6cad3da613860bb263f192cda56c60b6
+vendor/lib/libsmwrapper.so|3926c3928c7276f34dd851798552f7433e86bbf5
 
 # Media - from LA.UM.8.6.r1-04400-89xx.0
 lib/extractors/libmmparserextractor.so
@@ -646,10 +646,10 @@ vendor/lib/libsensor_user_cal.so
 vendor/lib/sensors.ssc.so
 
 # Thermal - from LA.UM.7.5.r1-05300-8x96.0
-vendor/bin/thermal-engine
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
--vendor/lib/libthermalclient.so
+vendor/bin/thermal-engine|61f954e68514aedeede9cca90cc70b5cd4736e02
+-vendor/lib64/libthermalclient.so|552c501aac03b5390f30f7105f6f46788f197f9f
+vendor/lib64/libthermalioctl.so|e1597b961c1bee480f018dd7d2cc4e9fc2bb252b
+-vendor/lib/libthermalclient.so|dc66c8ba3a49842f090eb4d15d2143d68987367d
 
 # Time services - from LA.UM.8.6.r1-04400-89xx.0
 -vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um
