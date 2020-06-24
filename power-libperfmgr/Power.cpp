@@ -15,7 +15,7 @@
  */
 
 #define ATRACE_TAG (ATRACE_TAG_POWER | ATRACE_TAG_HAL)
-#define LOG_TAG "android.hardware.power@1.3-service.xiaomi-libperfmgr"
+#define LOG_TAG "android.hardware.power@1.3-service.xiaomi_8996-libperfmgr"
 
 #define TAP_TO_WAKE_NODE "/proc/touchpanel/double_tap_enable"
 

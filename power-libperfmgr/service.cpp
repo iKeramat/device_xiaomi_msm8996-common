@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power@1.3-service.xiaomi-libperfmgr"
+#define LOG_TAG "android.hardware.power@1.3-service.xiaomi_8996-libperfmgr"
 
 #include <log/log.h>
 #include <hidl/HidlTransportSupport.h>
