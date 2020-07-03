@@ -413,6 +413,7 @@ vendor/firmware/a530v3_seq.fw2
 
 # IMS - from LA.UM.8.6.r1-04400-89xx.0
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|68901007ba1a48ceb1b728fc3b5483dd51b5e3a0
+-product/app/imssettings/imssettings.apk|5e24e30b6fb5906e13fd8db1f57e30b8b59028ff
 -product/priv-app/ims/ims.apk|2df8df9a6c49e10f5775b24434e640e343a738e9
 product/lib64/libimscamera_jni.so|41fd9faa10818c9f7c5a14d372a07f79b0ca0daa
 product/lib64/libimsmedia_jni.so|86ff68440540c40834c2e17261f178f7de50549e
@@ -569,8 +570,10 @@ vendor/lib64/libqmiservices.so|7b2051dea42b5515b3ae4036c61d6ce118f69411
 -product/app/datastatusnotification/datastatusnotification.apk|4685df4bb2446950bcb37da83f4acefc69bfcdc3
 -product/app/embms/embms.apk|212b7ce792ac5d47ef50872b270fc83736fcfdb7
 product/etc/permissions/embms.xml|5589ed8da213acd27e2ad2109094561eb1be30a7
+product/etc/permissions/lpa.xml|cd9d14c6022ca046cd1de1157b06fe64b6e4c524
 product/framework/embmslibrary.jar|00eb5b4144f001423032a88cc1d227b3655db88b
 product/framework/qti-telephony-common.jar|14e32b1cb0fdc9d7802414e95e41376499b51b11
+product/framework/uimlpalibrary.jar|faee42499753b92efc6116e5e8c2ba484384be38
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|71d083671c3ea4cd5e287a63fb254bb0ab60ed20
 vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
