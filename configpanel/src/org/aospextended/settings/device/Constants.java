@@ -15,9 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
-
-import org.lineageos.internal.util.FileUtils;
+package org.aospextended.settings.device;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -41,7 +39,7 @@ public class Constants {
     public static final String VIRTUAL_KEYS_NODE = "/proc/touchpanel/capacitive_keys_enable";
 
     // Intents
-    public static final String CUST_INTENT = "org.lineageos.settings.device.CUST_UPDATE";
+    public static final String CUST_INTENT = "org.aospextended.settings.device.CUST_UPDATE";
     public static final String CUST_INTENT_EXTRA = "pocketmode_service";
 
     // Holds <preference_key> -> <proc_node> mapping

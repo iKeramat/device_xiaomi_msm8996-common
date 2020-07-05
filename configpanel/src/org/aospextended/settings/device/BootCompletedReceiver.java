@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package org.aospextended.settings.device;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -26,8 +26,6 @@ import android.content.SharedPreferences;
 import android.util.Log;
 
 import androidx.preference.PreferenceManager;
-
-import org.lineageos.internal.util.FileUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 

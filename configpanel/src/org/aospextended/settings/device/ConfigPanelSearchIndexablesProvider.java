@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package org.aospextended.settings.device;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -34,9 +34,6 @@ import static android.provider.SearchIndexablesContract.COLUMN_INDEX_XML_RES_RES
 import static android.provider.SearchIndexablesContract.INDEXABLES_RAW_COLUMNS;
 import static android.provider.SearchIndexablesContract.INDEXABLES_XML_RES_COLUMNS;
 import static android.provider.SearchIndexablesContract.NON_INDEXABLES_KEYS_COLUMNS;
-
-import org.lineageos.internal.util.FileUtils;
-import org.lineageos.internal.util.PackageManagerUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,14 +70,14 @@ public class ConfigPanelSearchIndexablesProvider extends SearchIndexablesProvide
         ref[COLUMN_INDEX_XML_RES_CLASS_NAME] = null;
         ref[COLUMN_INDEX_XML_RES_ICON_RESID] = sir.iconResId;
         ref[COLUMN_INDEX_XML_RES_INTENT_ACTION] = "com.android.settings.action.EXTRA_SETTINGS";
-        ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_PACKAGE] = "org.lineageos.settings.device";
+        ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_PACKAGE] = "org.aospextended.settings.device";
         ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_CLASS] = sir.className;
         return ref;
     }
 
     private List<String> getNonIndexableKeys(Context context) {
         List<String> keys = new ArrayList<>();
-        if (!PackageManagerUtils.isAppInstalled(context, "org.lineageos.pocketmode")) {
+        if (!PackageManagerUtils.isAppInstalled(context, "org.aospextended.pocketmode")) {
             keys.add(Constants.FP_POCKETMODE_KEY);
         }
         if (!FileUtils.fileExists(Constants.FP_HOME_KEY_NODE) &&
