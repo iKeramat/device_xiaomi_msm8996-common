@@ -26,6 +26,17 @@
 
 /sys/module/cnss_common/parameters/bdwlan_file                                  u:object_r:sysfs_cnss_common:s0
 
+
+/sys/devices/platform/kcal_ctrl.0(/.*)?			u:object_r:kcal_dev:s0
+/sys/bus/platform/drivers/kcal_ctrl(/.*)?		u:object_r:kcal_dev:s0
+
+/sys/devices/virtual/timed_output/vibrator/vtg_level    u:object_r:sysfs_vibrator:s0
+/sys/devices/virtual/timed_output/vibrator/vtg_min      u:object_r:sysfs_vibrator:s0
+/sys/devices/virtual/timed_output/vibrator/vtg_max      u:object_r:sysfs_vibrator:s0
+
+/sys/devices/soc/400f000.qcom,spmi/spmi-0/spmi0-03/400f000.qcom,spmi:qcom,pmi8994@3:qcom,leds@d300/leds/led:torch_0/max_brightness            u:object_r:sysfs_torch:s0
+/sys/devices/soc/400f000.qcom,spmi/spmi-0/spmi0-03/400f000.qcom,spmi:qcom,pmi8994@3:qcom,leds@d300/leds/led:torch_1/max_brightness            u:object_r:sysfs_torch:s0
+
 # Data files
 /data/fpc(/.*)?                       u:object_r:fpc_data_file:s0
 /data/vendor/qcam(/.*)?               u:object_r:vendor_camera_data_file:s0

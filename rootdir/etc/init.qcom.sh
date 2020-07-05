@@ -31,6 +31,7 @@
 chown -LR system.system /proc/buttons
 chown -L system.system /proc/touchpanel/reversed_keys_enable
 chown -L system.system /proc/touchpanel/capacitive_keys_enable
+chown -L system.system /proc/touchpanel/double_tap_enable
 
 target=`getprop ro.board.platform`
 low_ram=`getprop ro.config.low_ram`

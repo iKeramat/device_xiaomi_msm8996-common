@@ -173,6 +173,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.use_old_mnc_mcc_format=true \
     persist.vendor.radio.procedure_bytes=SKIP
 
+# Spectrum Kernel Manager
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.spectrum.profile=0
+
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
