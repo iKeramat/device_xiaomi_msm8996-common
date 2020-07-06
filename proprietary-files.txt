@@ -572,7 +572,6 @@ vendor/lib64/libqmiservices.so|7b2051dea42b5515b3ae4036c61d6ce118f69411
 product/etc/permissions/embms.xml|5589ed8da213acd27e2ad2109094561eb1be30a7
 product/etc/permissions/lpa.xml|cd9d14c6022ca046cd1de1157b06fe64b6e4c524
 product/framework/embmslibrary.jar|00eb5b4144f001423032a88cc1d227b3655db88b
-product/framework/qti-telephony-common.jar|14e32b1cb0fdc9d7802414e95e41376499b51b11
 product/framework/uimlpalibrary.jar|faee42499753b92efc6116e5e8c2ba484384be38
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|71d083671c3ea4cd5e287a63fb254bb0ab60ed20
 vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
@@ -580,6 +579,9 @@ vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/netmgrd.rc|711a0b87943ecd5308dc875395a9d67bd080dcef
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
 vendor/etc/init/vendor.qti.tftp.rc|091915c28a3bc574d39189688748cc922d9e65e4
+
+# RIL - from LA.UM.8.6.r1-03400-89xx.0
+product/framework/qti-telephony-common.jar|180e59fb4d79e00612526c243b94711630940733
 
 # RIL - from daisy V10.0.18.0 PDLMIXM
 -app/QtiTelephonyService/QtiTelephonyService.apk|420b39e20a5166940c1e2e55e8d9c92ec910cebb
