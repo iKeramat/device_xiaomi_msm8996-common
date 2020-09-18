@@ -171,6 +171,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
+# SurfaceFlinger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1
+
 # Spectrum Kernel Manager
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.spectrum.profile=0
