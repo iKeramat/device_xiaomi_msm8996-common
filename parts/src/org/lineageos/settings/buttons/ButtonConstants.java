@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *           (C) 2017-2018 The LineageOS Project
+ *               2017-2018,2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,17 +15,14 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package org.lineageos.settings.buttons;
 
 import org.lineageos.internal.util.FileUtils;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Constants {
-
-    // Category keys
-    public static final String CATEGORY_FP = "fp_key";
+public class ButtonConstants {
 
     // Preference keys
     public static final String BUTTON_SWAP_KEY = "button_swap";
@@ -36,17 +33,13 @@ public class Constants {
     // Nodes
     public static final String CYTTSP_BUTTON_SWAP_NODE = "/proc/buttons/reversed_keys_enable";
     public static final String FP_HOME_KEY_NODE = "/sys/devices/soc/soc:fpc_fpc1020/enable_key_events";
+    public static final String FP_PROX_NODE = "/sys/devices/soc/soc:fpc_fpc1020/proximity_state";
     public static final String FP_WAKEUP_NODE = "/sys/devices/soc/soc:fpc_fpc1020/enable_wakeup";
     public static final String TOUCHPANEL_BUTTON_SWAP_NODE = "/proc/touchpanel/reversed_keys_enable";
     public static final String VIRTUAL_KEYS_NODE = "/proc/touchpanel/capacitive_keys_enable";
 
-    // Intents
-    public static final String CUST_INTENT = "org.lineageos.settings.device.CUST_UPDATE";
-    public static final String CUST_INTENT_EXTRA = "pocketmode_service";
-
     // Holds <preference_key> -> <proc_node> mapping
     public static final Map<String, String> sBooleanNodePreferenceMap = new HashMap<>();
-    public static final Map<String, String> sStringNodePreferenceMap = new HashMap<>();
 
     // Holds <preference_key> -> <default_values> mapping
     public static final Map<String, Object> sNodeDefaultMap = new HashMap<>();
@@ -64,9 +57,9 @@ public class Constants {
     };
 
     static {
-        if (FileUtils.fileExists(Constants.CYTTSP_BUTTON_SWAP_NODE)) {
+        if (FileUtils.fileExists(CYTTSP_BUTTON_SWAP_NODE)) {
             sBooleanNodePreferenceMap.put(BUTTON_SWAP_KEY, CYTTSP_BUTTON_SWAP_NODE);
-        } else if (FileUtils.fileExists(Constants.TOUCHPANEL_BUTTON_SWAP_NODE)) {
+        } else if (FileUtils.fileExists(TOUCHPANEL_BUTTON_SWAP_NODE)) {
             sBooleanNodePreferenceMap.put(BUTTON_SWAP_KEY, TOUCHPANEL_BUTTON_SWAP_NODE);
         }
         sBooleanNodePreferenceMap.put(FP_HOME_KEY, FP_HOME_KEY_NODE);
