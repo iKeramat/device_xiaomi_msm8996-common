@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017-2021 The LineageOS Project
+# Copyright (C) 2020-2021 LibreMobileOS Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,7 +27,7 @@ $(call inherit-product, vendor/xiaomi/msm8996-common/msm8996-common-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-lmodroid
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -264,10 +265,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_8996
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -380,10 +377,6 @@ PRODUCT_PACKAGES += \
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
