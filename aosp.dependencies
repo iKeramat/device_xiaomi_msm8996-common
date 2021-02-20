@@ -1,10 +1,13 @@
 [
   {
+    "remote":      "lineage",
     "repository": "android_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
   },
   {
-    "repository": "android_kernel_xiaomi_msm8996",
+    "remote":      "github",
+    "repository": "iKeramat/kernel_xiaomi_msm8996",
     "target_path": "kernel/xiaomi/msm8996"
+    "branch":      "eleven-caf"
   }
 ]
