@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018 The Xiaomi-SDM660 Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+     <!-- Title names and summary -->
+    <string name="advanced_settings">Device Features</string>
+    <string name="advanced_settings_summary">Device specific options</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">Haptic feedback</string>
+    <string name="vibration_strength_title">Strength</string>
+
+    <!-- Display title-->
+    <string name="display_title">Display</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_xiaomi">Xiaomi Doze</string>
+    <string name="advanced_doze_summary">Ambient Display</string>
+
+    <!-- kcal -->
+    <string name="device_kcal_title">Display Color Calibration</string>
+     <string name="device_kcal_summary">Display color calibration using KCAL</string>
+    <string name="advanced_settings_kcal">Display Color Calibration</string>
+    <string name="cat_colormanagement">Color Settings</string>
+    <string name="cat_calibration">Display Calibration</string>
+    <string name="kcal_enabled">On</string>
+    <string name="kcal_disabled">Off</string>
+    <string name="set_on_boot">Set on boot</string>
+    <string name="color_red">Red</string>
+    <string name="color_green">Green</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_minimum">Minimum</string>
+    <string name="saturation">Saturation</string>
+    <string name="value">Value</string>
+    <string name="contrast">Contrast</string>
+    <string name="hue">Hue</string>
+    <string name="grayscale">Grayscale Display</string>
+
+    <!-- Presets -->
+    <string name="presets_dialog_title">Select Preset</string>
+    <string name="preset_default">Default</string>
+    <string name="preset_version_1">Version 1</string>
+    <string name="preset_version_2">Version 2</string>
+    <string name="preset_version_3">Version 3</string>
+    <string name="preset_triluminous">Triluminous</string>
+    <string name="preset_deep_black_white">Deep Black and White</string>
+    <string name="preset_deep_natural">Deep Natural</string>
+    <string name="preset_cool_amoled">Cool Amoled</string>
+    <string name="preset_extreme_amoled">Extreme Amoled</string>
+    <string name="preset_warm_amoled">Warm Amoled</string>
+    <string name="preset_hybrid_mamba">Hybrid Mamba</string>
+    <string name="preset_hide_ge1">Hide Ghosting Effect 1</string>
+    <string name="preset_hide_ge2">Hide Ghosting Effect 2</string>
+
+    <!-- Butoons -->
+    <string name="buttons_title">Buttons</string>
+
+    <!-- Swap buttons -->
+    <string name="swapbuttons_title">Swap buttons</string>
+    <string name="swapbuttons_summary">Swap the order of recents and back buttons</string>
+
+    <!-- Fingerprint -->
+    <string name="fingerprint_title">Fingerprint options</string>
+
+    <!-- Fingerprint wakeup -->
+    <string name="fingerprint_wakeup_title">Fingerprint wakes device</string>
+    <string name="fingerprint_wakeup_summary">Allow fingerprint to wake the device while screen is off</string>
+
+     <!-- Fingerprint as button -->
+    <string name="fingerprint_as_button_title">Fingerprint as button</string>
+    <string name="fingerprint_as_button_summary">Use fingerprint reader as a customizable button</string>
+
+    <!-- FPS Info -->
+    <string name="fps_info_title">FPS Info Overlay</string>
+    <string name="fps_info_summary">Show overlay with current frames per second</string>
+
+    <!-- Gestures -->
+    <string name="gestures_title">Gestures</string>
+
+    <!-- Double tap to wake -->
+    <string name="double_tap_to_wake_title">Double Tap to wake</string>
+    <string name="double_tap_to_wake_summary">Double tap on screen wake device</string>
+
+	<!-- Torch -->
+    <string name="torch_title">Torch</string>
+    <string name="torch_brightness_title">Brightness</string>
+    
+    <!-- Spectrum Profiles -->
+    <string name="spectrum_profile_title">Performance</string>
+    <string name="spectrum_title">Performance Settings</string>
+    <string name="spectrum_summary">Choose your Performance settings</string>
+    <string name="spectrum_dialogTitle">Choose your Performance settings</string>
+
+    <!-- Values for Spectrum Presets -->
+    <string name="spectrum_performance">Performance</string>
+    <string name="spectrum_battery">Battery</string>
+    <string name="spectrum_gaming">Gaming</string>
+    <string name="spectrum_balance">Balance</string>
+    <string name="spectrum_extreme_battery">Extreme Battery</string>
+
+    <!-- menu -->
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Reset</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">Choose new Value</string>
+    <string name="default_value">Default Value</string>
+    <string name="edit_hint">Value between %1$d and %2$d</string>
+</resources>
