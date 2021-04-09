@@ -39,19 +39,6 @@
     <string name="vibration_title">Vibrazione</string>
     <string name="vibration_strength_title">Intensità</string>
 
-    <!-- Spectrum Profiles -->
-    <string name="spectrum_profile_title">Prestazioni</string>
-    <string name="spectrum_title">Impostazioni profilo</string>
-    <string name="spectrum_summary">Scegli il profilo delle prestazioni</string>
-    <string name="spectrum_dialogTitle">Scegli il profilo delle prestazioni</string>
-
-    <!-- Values for Spectrum Presets -->
-    <string name="spectrum_performance">Prestazioni</string>
-    <string name="spectrum_battery">Batteria</string>
-    <string name="spectrum_gaming">Gioco</string>
-    <string name="spectrum_balance">Bilanciato</string>
-    <string name="spectrum_extreme_battery">Risparmio batteria</string>
-
     <!-- kcal -->
     <string name="advanced_settings_kcal">Calibrazione colori display</string>
     <string name="cat_colormanagement">Impostazioni colori</string>

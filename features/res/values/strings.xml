@@ -96,19 +96,6 @@
 	<!-- Torch -->
     <string name="torch_title">Torch</string>
     <string name="torch_brightness_title">Brightness</string>
-    
-    <!-- Spectrum Profiles -->
-    <string name="spectrum_profile_title">Performance</string>
-    <string name="spectrum_title">Performance Settings</string>
-    <string name="spectrum_summary">Choose your Performance settings</string>
-    <string name="spectrum_dialogTitle">Choose your Performance settings</string>
-
-    <!-- Values for Spectrum Presets -->
-    <string name="spectrum_performance">Performance</string>
-    <string name="spectrum_battery">Battery</string>
-    <string name="spectrum_gaming">Gaming</string>
-    <string name="spectrum_balance">Balance</string>
-    <string name="spectrum_extreme_battery">Extreme Battery</string>
 
     <!-- menu -->
     <string name="kcal_presets">@string/presets_dialog_title</string>

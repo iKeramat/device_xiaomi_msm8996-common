@@ -172,10 +172,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1
 
-# Spectrum Kernel Manager
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.spectrum.profile=0
-
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.controller=6a00000.dwc3

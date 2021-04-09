@@ -39,19 +39,6 @@
     <string name="vibration_title">Getaran</string>
     <string name="vibration_strength_title">Intensitas</string>
 
-    <!-- Spectrum Profiles -->
-    <string name="spectrum_profile_title">Kinerja</string>
-    <string name="spectrum_title">Pengaturan profil</string>
-    <string name="spectrum_summary">Pilih profil kinerja Anda</string>
-    <string name="spectrum_dialogTitle">Pilih profil kinerja Anda</string>
-
-    <!-- Values for Spectrum Presets -->
-    <string name="spectrum_performance">Kinerja</string>
-    <string name="spectrum_battery">Baterai</string>
-    <string name="spectrum_gaming">Permainan</string>
-    <string name="spectrum_balance">Seimbang</string>
-    <string name="spectrum_extreme_battery">Penghematan baterai</string>
-
     <!-- kcal -->
     <string name="advanced_settings_kcal">Tampilan kalibrasi warna</string>
     <string name="cat_colormanagement">Pengaturan warna</string>
