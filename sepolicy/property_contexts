@@ -15,6 +15,4 @@ sys.panel.                 u:object_r:system_panel_prop:s0
 
 vendor.powerhal.                       u:object_r:vendor_power_prop:s0
 
-persist.spectrum.profile               u:object_r:spectrum_profile_prop:s0
-
 vendor.thermal.config      u:object_r:thermal_prop:s0

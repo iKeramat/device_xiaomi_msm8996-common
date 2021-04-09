@@ -140,8 +140,7 @@ PRODUCT_PACKAGES += \
 
 # Common config scripts
 PRODUCT_PACKAGES += \
-    init.panel.sh \
-    init.spectrum.sh
+    init.panel.sh
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -151,8 +150,7 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc \
-    init.spectrum.rc
+    ueventd.qcom.rc
 
 # Component overrides
 PRODUCT_COPY_FILES += \
