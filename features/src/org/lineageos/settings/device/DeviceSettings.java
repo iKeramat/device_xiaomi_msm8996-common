@@ -44,11 +44,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private static final String PREF_DEVICE_KCAL = "device_kcal";
     private static final String DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
 
-    // Spectrum
-    public static final String PREF_SPECTRUM = "spectrum";
-    public static final String SPECTRUM_SYSTEM_PROPERTY = "persist.spectrum.profile";
-    private SecureSettingListPreference mSPECTRUM;
-
 
     // Buttons
     private static final String CATEGORY_BUTTONS = "buttons";
@@ -106,11 +101,6 @@ public class DeviceSettings extends PreferenceFragment implements
             return true;
         });
 
-        mSPECTRUM = (SecureSettingListPreference) findPreference(PREF_SPECTRUM);
-        mSPECTRUM.setValue(FileUtils.getStringProp(SPECTRUM_SYSTEM_PROPERTY, "0"));
-        mSPECTRUM.setSummary(mSPECTRUM.getEntry());
-        mSPECTRUM.setOnPreferenceChangeListener(this);
-
         if (FileUtils.fileWritable(SWAP_BUTTONS_PATH)) {
             SecureSettingSwitchPreference swapbuttons = (SecureSettingSwitchPreference) findPreference(PREF_SWAP_BUTTONS);
             swapbuttons.setChecked(FileUtils.getFileValueAsBoolean(SWAP_BUTTONS_PATH, false));
@@ -154,12 +144,6 @@ public class DeviceSettings extends PreferenceFragment implements
             case PREF_VIBRATION_STRENGTH:
                 double vibrationValue = (int) value / 100.0 * (MAX_VIBRATION - MIN_VIBRATION) + MIN_VIBRATION;
                 FileUtils.setValue(VIBRATION_STRENGTH_PATH, vibrationValue);
-                break;
-
-            case PREF_SPECTRUM:
-                mSPECTRUM.setValue((String) value);
-                mSPECTRUM.setSummary(mSPECTRUM.getEntry());
-                FileUtils.setStringProp(SPECTRUM_SYSTEM_PROPERTY, (String) value);
                 break;
 
             case PREF_SWAP_BUTTONS:
