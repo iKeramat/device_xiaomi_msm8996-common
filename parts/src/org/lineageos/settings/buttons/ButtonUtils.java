@@ -26,7 +26,7 @@ import android.util.Log;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 
-import org.lineageos.internal.util.FileUtils;
+import org.lineageos.settings.util.FileUtils;
 
 public class ButtonUtils {
 

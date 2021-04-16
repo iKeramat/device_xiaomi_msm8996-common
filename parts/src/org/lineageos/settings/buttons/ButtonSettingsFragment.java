@@ -29,8 +29,8 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 
-import org.lineageos.internal.util.FileUtils;
-import org.lineageos.internal.util.PackageManagerUtils;
+import org.lineageos.settings.util.FileUtils;
+import org.lineageos.settings.util.PackageManagerUtils;
 import org.lineageos.settings.R;
 
 public class ButtonSettingsFragment extends PreferenceFragment

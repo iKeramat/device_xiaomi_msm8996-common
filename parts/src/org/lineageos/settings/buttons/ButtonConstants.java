@@ -17,7 +17,7 @@
 
 package org.lineageos.settings.buttons;
 
-import org.lineageos.internal.util.FileUtils;
+import org.lineageos.settings.util.FileUtils;
 
 import java.util.HashMap;
 import java.util.Map;
