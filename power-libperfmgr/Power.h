@@ -27,7 +27,6 @@
 #include <perfmgr/HintManager.h>
 
 #include "CameraMode.h"
-#include "DisplayLowPower.h"
 #include "InteractionHandler.h"
 
 namespace android {
@@ -73,7 +72,6 @@ class Power : public IPower {
   private:
     std::shared_ptr<HintManager> mHintManager;
     std::unique_ptr<InteractionHandler> mInteractionHandler;
-    std::unique_ptr<DisplayLowPower> mDisplayLowPower;
     std::atomic<bool> mSustainedPerfModeOn;
     std::atomic<enum CameraStreamingMode> mCameraStreamingMode;
     std::atomic<bool> mReady;
