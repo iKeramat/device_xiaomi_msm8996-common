@@ -15,3 +15,4 @@ genfscon sysfs /devices/soc/qpnp-fg-24/power_supply                     u:object
 genfscon sysfs /devices/soc/qpnp-smbcharger-21/power_supply             u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/soc/qpnp-smbcharger-23/power_supply             u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/soc/soc:qcom,bcl/power_supply                   u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /bus/msm_subsys                                       u:object_r:sysfs_msm_subsys:s0
