@@ -6,15 +6,6 @@
 
     <!-- Buttons -->
     <string name="buttons_title">Tombol</string>
-    <string name="swapbuttons_title">Tukar tombol</string>
-    <string name="swapbuttons_summary">Tukar urutan tombol recents dan tombol back</string>
-
-    <!-- Fingerprint options -->
-    <string name="fingerprint_title">Opsi sidik jari</string>
-    <string name="fingerprint_wakeup_title">Perangkat bangun sidik jari</string>
-    <string name="fingerprint_wakeup_summary">Mengizinkan sidik jari untuk membangunkan perangkat saat layar mati</string>
-    <string name="fingerprint_as_button_title">Sidik jari sebagai tombol</string>
-    <string name="fingerprint_as_button_summary">Gunakan Pembaca Sidik Jari sebagai tombol Disesuaikan</string>
 
     <!-- Gestures -->
     <string name="gestures_title">Gerakan</string>

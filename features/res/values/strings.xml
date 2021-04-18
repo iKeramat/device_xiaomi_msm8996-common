@@ -66,21 +66,8 @@
 
     <!-- Butoons -->
     <string name="buttons_title">Buttons</string>
-
-    <!-- Swap buttons -->
-    <string name="swapbuttons_title">Swap buttons</string>
-    <string name="swapbuttons_summary">Swap the order of recents and back buttons</string>
-
-    <!-- Fingerprint -->
-    <string name="fingerprint_title">Fingerprint options</string>
-
-    <!-- Fingerprint wakeup -->
-    <string name="fingerprint_wakeup_title">Fingerprint wakes device</string>
-    <string name="fingerprint_wakeup_summary">Allow fingerprint to wake the device while screen is off</string>
-
-     <!-- Fingerprint as button -->
-    <string name="fingerprint_as_button_title">Fingerprint as button</string>
-    <string name="fingerprint_as_button_summary">Use fingerprint reader as a customizable button</string>
+    <string name="button_settings_title">Additional buttons</string>
+    <string name="buttons_settings_summary">Buttons and fingerprint options</string>
 
     <!-- FPS Info -->
     <string name="fps_info_title">FPS Info Overlay</string>
