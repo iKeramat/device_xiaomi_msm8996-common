@@ -19,30 +19,46 @@
         android:key="buttons"
         android:title="@string/buttons_title">
 
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
-            android:defaultValue="false"
-            android:key="swapbuttons"
-            android:summary="@string/swapbuttons_summary"
-            android:title="@string/swapbuttons_title"
-            android:icon="@drawable/ic_swap" />
+        <Preference
+            android:key="butoon_settings"
+            android:persistent="false"
+            android:summary="@string/buttons_settings_summary"
+            android:title="@string/button_settings_title"
+            android:icon="@drawable/ic_settings_additional_buttons">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="org.lineageos.settings.buttonsettings.buttons.ButtonSettingsActivity"
+                android:targetPackage="org.lineageos.settings.buttonsettings" />
+        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/fingerprint_title">
+        android:key="display"
+        android:title="@string/display_title">
 
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
-            android:defaultValue="false"
-            android:key="fingerprint_wakeup"
-            android:summary="@string/fingerprint_wakeup_summary"
-            android:title="@string/fingerprint_wakeup_title"
-            android:icon="@drawable/ic_fpwakeup" />
+        <Preference
+            android:key="device_doze"
+            android:persistent="false"
+            android:summary="@string/advanced_doze_summary"
+            android:title="@string/ambient_display_xiaomi"
+            android:icon="@drawable/ic_doze">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"
+                android:targetPackage="org.lineageos.settings.doze" />
+        </Preference>
 
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
-            android:defaultValue="false"
-            android:key="fingerprint_as_button"
-            android:summary="@string/fingerprint_as_button_summary"
-            android:title="@string/fingerprint_as_button_title"
-            android:icon="@drawable/ic_fphome" />
+        <Preference
+            android:key="device_kcal"
+            android:persistent="false"
+            android:summary="@string/device_kcal_summary"
+            android:title="@string/device_kcal_title"
+            android:icon="@drawable/ic_color">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="org.lineageos.settings.kcal.KCalSettingsActivity"
+                android:targetPackage="org.lineageos.settings.kcal" />
+        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -82,33 +98,5 @@
             android:title="@string/torch_brightness_title" />
 
     </PreferenceCategory>
-    
-    <PreferenceCategory
-        android:key="display"
-        android:title="@string/display_title">
 
-        <Preference
-            android:key="device_kcal"
-            android:persistent="false"
-            android:summary="@string/device_kcal_summary"
-            android:title="@string/device_kcal_title"
-            android:icon="@drawable/ic_color">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetClass="org.lineageos.settings.kcal.KCalSettingsActivity"
-                android:targetPackage="org.lineageos.settings.kcal" />
-        </Preference>
-
-        <Preference
-            android:key="device_doze"
-            android:persistent="false"
-            android:summary="@string/advanced_doze_summary"
-            android:title="@string/ambient_display_xiaomi"
-            android:icon="@drawable/ic_doze">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"
-                android:targetPackage="org.lineageos.settings.doze" />
-        </Preference>
-    </PreferenceCategory>
 </PreferenceScreen>

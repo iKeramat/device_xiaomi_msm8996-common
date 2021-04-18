@@ -61,12 +61,6 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
                         DeviceSettings.PREF_TORCH_BRIGHTNESS, 100));
         FileUtils.setValue(DeviceSettings.VIBRATION_STRENGTH_PATH, Settings.Secure.getInt(
                 context.getContentResolver(), DeviceSettings.PREF_VIBRATION_STRENGTH, 80) / 100.0 * (DeviceSettings.MAX_VIBRATION - DeviceSettings.MIN_VIBRATION) + DeviceSettings.MIN_VIBRATION);
-        FileUtils.setValue(DeviceSettings.SWAP_BUTTONS_PATH, Settings.Secure.getInt(
-                context.getContentResolver(), DeviceSettings.PREF_SWAP_BUTTONS, 0));
-        FileUtils.setValue(DeviceSettings.FINGERPRINT_WAKEUP_PATH, Settings.Secure.getInt(
-                context.getContentResolver(), DeviceSettings.PREF_FINGERPRINT_WAKEUP, 0));
-        FileUtils.setValue(DeviceSettings.FINGERPRINT_AS_BUTTON_PATH, Settings.Secure.getInt(
-                context.getContentResolver(), DeviceSettings.PREF_FINGERPRINT_AS_BUTTON, 0));
         FileUtils.setValue(DeviceSettings.DOUBLE_TAP_TO_WAKE_PATH, Settings.Secure.getInt(
                 context.getContentResolver(), DeviceSettings.PREF_DOUBLE_TAP_TO_WAKE, 0));
     }

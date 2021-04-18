@@ -6,15 +6,6 @@
 
     <!-- Buttons -->
     <string name="buttons_title">Butonlar</string>
-    <string name="swapbuttons_title">Butonların yerlerini değiştir</string>
-    <string name="swapbuttons_summary">Son uygulamalar ve geri butonlarının yerlerini değiştir</string>
-
-	<!-- Fingerprint options -->
-    <string name="fingerprint_title">Parmak izi ayarları</string>
-    <string name="fingerprint_wakeup_title">Parmak izi cihazı uyandırır</string>
-    <string name="fingerprint_wakeup_summary">Ekran kapalıyken parmak izinin cihazı uyandırmasına izin ver</string>
-    <string name="fingerprint_as_button_title">Parmak izi butonu</string>
-    <string name="fingerprint_as_button_summary">Parmak izi okuyucusunu bir buton olarak kullan</string>
 
     <!-- Gestures -->
     <string name="gestures_title">Hareketler</string>
