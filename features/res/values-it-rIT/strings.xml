@@ -6,15 +6,6 @@
 
     <!-- Buttons -->
     <string name="buttons_title">Pulsanti</string>
-    <string name="swapbuttons_title">Scambia pulsanti</string>
-    <string name="swapbuttons_summary">Inverti l\'ordine del tasto indietro e recenti</string>
-
-	<!-- Fingerprint options -->
-    <string name="fingerprint_title">Opzioni sensore di impronte digitali</string>
-    <string name="fingerprint_wakeup_title">Risveglio con il sensore di impronte</string>
-    <string name="fingerprint_wakeup_summary">Consenti al sensore di improte di risvegliare il dispositivo</string>
-    <string name="fingerprint_as_button_title">Sensore di impronte come plusante</string>
-    <string name="fingerprint_as_button_summary">Usa il sensore di impronte come un pulsante aggiuntivo</string>
 
     <!-- Gestures -->
     <string name="gestures_title">Gesti</string>
