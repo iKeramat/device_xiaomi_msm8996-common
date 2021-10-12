@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 BOARD_VENDOR := xiaomi
 
 VENDOR_PATH := device/xiaomi/msm8996-common
@@ -51,6 +53,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_RAMDISK_USE_XZ := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := r383902
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8996
 
 # Platform
@@ -84,7 +87,7 @@ AUDIO_FEATURE_ENABLED_SPKR_PROTECTION := true
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
+#USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
@@ -173,9 +176,13 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)
 VENDOR_SECURITY_PATCH := 2018-10-01
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+#include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
-PRODUCT_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+#PRODUCT_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
+BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/temp
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit.xiaomi_8996
