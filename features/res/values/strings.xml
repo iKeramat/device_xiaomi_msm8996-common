@@ -69,10 +69,6 @@
     <string name="button_settings_title">Additional buttons</string>
     <string name="buttons_settings_summary">Buttons and fingerprint options</string>
 
-    <!-- FPS Info -->
-    <string name="fps_info_title">FPS Info Overlay</string>
-    <string name="fps_info_summary">Show overlay with current frames per second</string>
-
     <!-- Gestures -->
     <string name="gestures_title">Gestures</string>
 
