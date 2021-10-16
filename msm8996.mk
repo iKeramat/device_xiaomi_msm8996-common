@@ -23,6 +23,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/msm8996-common/msm8996-common-vendor.mk)
 
+# Verify broken libraries
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
