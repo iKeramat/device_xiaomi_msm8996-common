@@ -92,7 +92,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
-    drm.service.enabled=true
+    drm.service.enabled=true \
+    media.mediadrmservice.enable=true \
+    ro.com.widevine.cachesize=16777216
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
