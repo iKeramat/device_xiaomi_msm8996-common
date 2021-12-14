@@ -43,6 +43,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.tunnel.encode=false \
     vendor.voice.path.for.pcm.voip=true
 
+# BPF
+PRODUCT_PROPERTY_OVERRIDES += \
+    bpf.progs_loaded=1
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \
