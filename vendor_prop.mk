@@ -44,8 +44,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.path.for.pcm.voip=true
 
 # BPF
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     bpf.progs_loaded=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=false
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
