@@ -244,6 +244,7 @@ vendor/etc/cne/mwqem.conf|c51d3893b86ab89fae218f3a92c4f9c18ea401a8
 vendor/etc/cne/profileMwqem.xml|947917691684584b7e2ddf3588cd6f8e99f3804f
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml|c63c37d067e3009735fbc54d4603d43d7d6623e1
 vendor/etc/init/cnd.rc|3a5183df3479500fb729493bc56c71166fc10bce
+vendor/lib/libsmemlog.so|4ebc56050af9aa89743012889246aef536c079a1
 vendor/lib64/libcacertclient.so|69ae73b9be13507ff39398ac5813ad709b8b7c32
 vendor/lib64/libcne.so|693161958cfac54f256a5ed1e2ec0392bdb31112
 vendor/lib64/libcneapiclient.so|b6479678e5b0e8b46d8df5eb8bd610aa17be00d0
@@ -251,6 +252,7 @@ vendor/lib64/libcneoplookup.so|60d6abe85061de4fa75e5e4f69d477f37f1f8f64
 vendor/lib64/libcneqmiutils.so|c2e2658698eb8b312ca6b28c1a1088a331bb28b9
 vendor/lib64/libwms.so|604a930c89016ef4851351d8f9e03f62f9fcf692
 vendor/lib64/libwqe.so|4ae892dfb16d6d0d337e7811696ac11a86e4838d
+vendor/lib64/libsmemlog.so|63ec11ff7660447465bc9905a8c1967fa2a1729f
 vendor/lib64/libxml.so|f9b20632e9fd324810caf865faea93e4ff505d91
 vendor/lib64/vendor.qti.data.factory@2.0.so|748bfbaa57a409b8962e2b1725e1415e423a7315
 vendor/lib64/vendor.qti.data.factory@2.1.so|bb1f3fa22563282ee24bf03ca681fdc45551feef
@@ -443,6 +445,7 @@ vendor/lib64/lib-imsrcs-v2.so|872425d4c34b9799d7159dd1249b57cb8b2e71cf
 vendor/lib64/lib-imsrcsbaseimpl.so|8b765d37ac42cb813cf28995fb1359f42f26912f
 vendor/lib64/lib-imsxml.so|25d01eaf4d9a1a0d5002e8ad27500d19b9adbbe5
 vendor/lib64/lib-rcsconfig.so|b1e2789988e1e85cccf79cf2fad57817ea1673e3
+vendor/lib64/lib-rtpdaemoninterface.so|1ff3924f95ef5c4043f34aeedb5aa1271aaf72c0
 vendor/lib64/lib-siputility.so|d478b100a73911120e3cb92474aa0f143e5345a9
 vendor/lib64/lib-uceservice.so|10bf52b956aab173d5561e8d0295119151b9af61
 vendor/lib64/vendor.qti.ims.callcapability@1.0.so|57096e260782ade5520d8c3e7912f1c029bf3d43
@@ -467,6 +470,7 @@ system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|4cf9e97f526c6278c5e2136e00d1fb8
 vendor/bin/ims_rtp_daemon|3fbadd85fa6057fbc165f149d65854d76c9e5eef
 vendor/etc/init/ims_rtp_daemon_legacy.rc|104b2a879db4d3dd44e74a3d7f6e69f6972c9129
 vendor/etc/seccomp_policy/imsrtp.policy|7ea8b4012da7bde98fc91bd882185b32784793cc
+vendor/lib64/lib-dplmedia.so|74daaade55cd65e65c19219117c62d78c7e7b759
 vendor/lib64/lib-imsdpl.so|f9761582c1ff5136a040556c806a7b2edd198e88
 vendor/lib64/lib-imsvtcore.so|30bcb9198a51d1e9e27b8d3ac05a0e4ebd31fec5
 vendor/lib64/lib-rtpcommon.so|227d40ba32da82a045727b054a046d95712e6a00
@@ -624,6 +628,10 @@ vendor/lib64/libqmi_encdec.so|a18bb21e5b9b53e3dc8dc45f6e7e65e32a467607
 vendor/lib64/libqmi_legacy.so|f324c6701ecf78ff50975c0bc7f99aea09cb3539
 
 
+# QMI (shared dependencies) - from sunfish RQ2A.210305.006
+vendor/lib/librmnetctl.so|57761c3b964c2a844e5608ba059444546e6ebfe8
+vendor/lib64/librmnetctl.so|fe9e762fc3cbd5f3c79795c4f048263838abb354
+
 # Radio - from LA.UM.9.6.3.r1-04400-89xx.0
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|a32f88ddcc8f9cba18aa5697ee5bd52201e89b13
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|60af440aae61fcd6939af56a0b94d9b9ef5ebd55
@@ -730,6 +738,10 @@ vendor/lib64/libril-qc-logger.so|307587cc7cca5d04aff8645e7d5932c5f46377bb
 vendor/lib64/qcrild_librilutils.so|f12ebc05420621d930ffe7f4b4859117e3c9fc35
 vendor/lib64/qtibus.so|cef56e2d40f69b6b6c60b93edb612744395f7359
 vendor/lib64/qtimutex.so|026d9acf29b23ab0419abfe3066bd4c9f13bf7ae
+
+# QC RIL dependencies
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so|b08b1c86ba4297b4237e14b0308a9de764860253
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so|1078e1a781c16d6bce2456524ce6765eddd01dac
 
 # Radio (eMBMS) - from LA.UM.9.6.3.r1-04400-89xx.0
 -system_ext/app/embms/embms.apk|010db3d97f4faad191f1a53415d7cf0a94dabcd1
