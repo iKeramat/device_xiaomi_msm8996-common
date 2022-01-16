@@ -156,6 +156,12 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
+ifeq ($(TARGET_KERNEL_VERSION),4.4)
+PRODUCT_PACKAGES += \
+    init.msm.usb.configfs.rc \
+    init.qcom.usb.sh
+endif
+
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
