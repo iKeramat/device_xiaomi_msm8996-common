@@ -136,7 +136,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     camera.msm8996 \
-    libmm-qcamera
+    libmm-qcamera \
+    libstdc++.vendor
 
 # CNE
 PRODUCT_PACKAGES += \
@@ -216,7 +217,12 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-    android.hidl.manager@1.0
+    android.hidl.base@1.0.vendor \
+    android.hidl.manager@1.0 \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
 
 # HW crypto
 PRODUCT_PACKAGES += \
@@ -307,7 +313,7 @@ PRODUCT_PACKAGES += \
 
 # QTI
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect
+    libqti_vndfwk_detect.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
