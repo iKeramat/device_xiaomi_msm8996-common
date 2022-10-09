@@ -45,6 +45,9 @@ function blob_fixup() {
     vendor/lib64/hw/vulkan.msm8996.so)
         sed -i "s/vulkan.msm8953.so/vulkan.msm8996.so/g" "${2}"
         ;;
+    vendor/lib64/lib-dplmedia.so)
+        "${PATCHELF}" --remove-needed "libmedia.so" "${2}"
+        ;;
     vendor/lib64/lib-uceservice.so)
         patchelf --add-needed "libbase_shim.so" "${2}"
         ;;
