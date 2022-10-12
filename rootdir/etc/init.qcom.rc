@@ -314,9 +314,6 @@ on property:sys.boot_completed=1
     # CPE fw_name used by sound trigger HAL
     chown media audio /sys/kernel/wcd_cpe0/fw_name
 
-on property:persist.env.fastdorm.enabled=true
-    setprop persist.radio.data_no_toggle 1
-
 service vendor.cnd /vendor/bin/cnd
     class main
     user system
@@ -547,6 +544,3 @@ service ppd /vendor/bin/mm-pp-dpps
 on property:init.svc.surfaceflinger=restarting
     stop vendor.hwcomposer-2-1
     start vendor.hwcomposer-2-1
-
-on property:slpi.restart=1
-    write /sys/kernel/debug/msm_subsys/slpi restart
